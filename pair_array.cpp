@@ -10,7 +10,7 @@ int main()
     p[2]={2,5};
     for(int i=0; i<3; i++)
     {
-    cout<<p[i].first<<"\n"<<p[i].second;
+    cout<<p[i].first<<" "<<p[i].second<<"\n";
     }
 
 
