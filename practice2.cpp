@@ -4,34 +4,28 @@ class palindrome
 
 {
     public:
-    bool pali(int a[], int n)
+    int pali(int a[], int n)
     {
-        int i, j, k;
-        string word;
-        word= to_string(a[i]);
+        int i,j,k;
+        string word=to_string(a[i]);
         j=0;
         k=word.length()-1;
         for(i=0; i<n; i++)
         {
-            while(j<=k)
-            {
             if(word[j]!=word[k])
             {
-                
                 return false;
             }
             j++;
             k--;
-        }
-        }    
-        return true;
-
+            }
+            return true;
     }
 };
 int main()
 {
     palindrome p;
-    int a[]={123671, 131, 151, 121};
+    int a[]={121, 131, 151, 121};
     int n= sizeof (a)/sizeof (a[0]);
    bool result= p.pali(a,n);
      if (result) {
