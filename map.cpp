@@ -7,10 +7,15 @@ int main()
     mpp.insert({"cde", 3});
     mpp.insert({"gfg", 4});
     mpp.insert({"cde", 2});
-    for(auto it: mpp)
+
+    for(auto it=mpp.begin(); it!=mpp.end(); it++)
     {
-        cout<<it.first<<"\t"<<it.second<<"\n"<< endl;
+        cout<<it->first<<"\t"<<it->second;
     }
+    // for(auto it: mpp)
+    // {
+    //     cout<<it.first<<"\t"<<it.second<<"\n"<< endl;
+    // }
 
 
 }
