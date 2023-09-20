@@ -14,7 +14,8 @@ class Solution
     list.push_back(l);
     list.push_back(r);
     return list;
-    };
+    }
+};
 
 //{ Driver Code Starts.
 int main()
