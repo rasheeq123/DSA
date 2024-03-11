@@ -12,6 +12,5 @@ public:
             n=n/10;
         }
         return prod-sum;
-
     }
 };
