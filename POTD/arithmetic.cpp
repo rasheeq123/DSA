@@ -3,7 +3,6 @@ public:
     int subtractProductAndSum(int n) {
         int rem, sum=0;
         int prod=1;
-    
         while(n>0)
         {
             rem=n%10;
