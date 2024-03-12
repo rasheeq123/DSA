@@ -2,9 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
-    class Solution {
+ class Solution {
     vector<vector<long long>> mat;
     vector<vector<long long>> res;
 
