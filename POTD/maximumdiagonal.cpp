@@ -3,9 +3,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
-
 class Solution{
   public:
     vector<int> matrixDiagonally(vector<vector<int>>&mat)
@@ -35,12 +32,8 @@ class Solution{
             dig++;
         }
         return res;
-        
-         
     }
 };
-
-
 
 int main()
 {
