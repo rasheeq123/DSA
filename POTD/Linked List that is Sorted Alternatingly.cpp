@@ -13,8 +13,6 @@ struct Node
 	}
 };
 
-
-
 void append(struct Node** headRef, struct Node** tailRef, int newData)
 {
 	struct Node* new_node = new Node(newData);
