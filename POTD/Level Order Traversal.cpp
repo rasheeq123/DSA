@@ -20,9 +20,6 @@ Node* newNode(int val)
     return temp;
 }
 
-
-
-
 class Solution
 {
     public:
