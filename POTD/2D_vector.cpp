@@ -33,6 +33,7 @@ int main()
         {
             cout<<v[i][j]<<" ";
         }
+        
     }
     cout<<v_3.size();
 
