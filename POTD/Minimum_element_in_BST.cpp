@@ -84,15 +84,14 @@ Node* buildTree(string str) {
 }
 
 
-// } Driver Code Ends
-// User function Template for C++
-
-// Function to find the minimum element in the given BST.
-
+/
 /* struct Node {
     int data;
     struct Node* left;
     struct Node* right;
+    struct Node* nextRight;
+  
+    struct node*nextleft;
 };
 // Utility function to create a new Tree Node
 Node* newNode(int val) {
