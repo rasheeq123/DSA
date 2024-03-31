@@ -1,11 +1,9 @@
 //{ Driver Code Starts
-// Initial Template for C++
-
 #include <bits/stdc++.h>
 using namespace std;
 
 struct Node {
-    int data;
+    int key;
     struct Node* left;
     struct Node* right;
 };
@@ -13,7 +11,7 @@ struct Node {
 // Utility function to create a new Tree Node
 Node* newNode(int val) {
     Node* temp = new Node;
-    temp->data = val;
+    temp->key = val;
     temp->left = NULL;
     temp->right = NULL;
 
@@ -84,38 +82,43 @@ Node* buildTree(string str) {
 }
 
 
-
-/* struct Node {
-    int data;
-    struct Node* left;
-    struct Node* right;
-    struct Node* nextRight;
-  
-    struct node*nextleft;
+// } Driver Code Ends
+// User function Template for C++
+/*
+//Structure of the Node of the BST is as
+struct Node {
+    int key;
+    Node* left, *right;
 };
-// Utility function to create a new Tree Node
-Node* newNode(int val) {
-    Node* temp = new Node;
-    temp->data = val;
-    temp->left = NULL;
-    temp->right = NULL;
 
-    return temp;
-}
-*/
+
+   'N' is the element
+   'size' is the total element in BST
+  */
 
 class Solution {
+  private:
+    void travel(Node* root, int n, int &curr){
+        if (root == NULL){
+            return;
+        }
+        if (root->key <= n){
+            curr = max(curr, root->key);
+            travel(root->right, n, curr);
+            return;
+        }
+        else{
+            travel(root->left, n, curr);
+            return;
+        }
+    }
   public:
-    int minValue(Node* root) {
-        // Code here
-          if(root==NULL) return -1;
-        if(root->left==NULL) return root->data;
-        
-        //left
-        return minValue(root->left);
+    int findMaxForN(Node* root, int n) {
+        int curr = -1;
+        travel(root, n, curr);
+        return curr;
     }
 };
-
 
 //{ Driver Code Starts.
 
@@ -125,11 +128,15 @@ int main() {
     scanf("%d ", &t);
     while (t--) {
         string s;
-        getline(cin, s);
+        getline(cin >> ws, s);
+        int x;
+        cin >> x;
+
         Node* root = buildTree(s);
         Solution ob;
-        cout << ob.minValue(root) << endl;
+        cout << ob.findMaxForN(root, x) << endl;
     }
     return 1;
 }
+
 // } Driver Code Ends
