@@ -82,19 +82,7 @@ Node* buildTree(string str) {
 }
 
 
-// } Driver Code Ends
-// User function Template for C++
-/*
-//Structure of the Node of the BST is as
-struct Node {
-    int key;
-    Node* left, *right;
-};
 
-
-   'N' is the element
-   'size' is the total element in BST
-  */
 
 class Solution {
   private:
