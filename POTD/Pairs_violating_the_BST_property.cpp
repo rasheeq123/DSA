@@ -18,6 +18,8 @@ Node* newNode(int data) {
     return (temp);
 }
 
+\
+\
 Node* buildTree(string str) {
     // Corner Case
     if (str.length() == 0 || str[0] == 'N')
@@ -81,15 +83,6 @@ Node* buildTree(string str) {
 }
 
 
-// } Driver Code Ends
-// User function Template for C++
-
-/*// A Tree node
-struct Node
-{
-    int data;
-    struct Node *left, *right;
-};*/
 
 class Solution {
   public:
