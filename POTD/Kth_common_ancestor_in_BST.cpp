@@ -83,18 +83,6 @@ Node* buildTree(string str)
 	return root;
 }
 
-
-// } Driver Code Ends
-//User function Template for C++
-
-/*// A Tree node
-struct Node
-{
-	int data;
-	struct Node *left, *right;
-};*/
-
-
 class Solution
 {
     public:
