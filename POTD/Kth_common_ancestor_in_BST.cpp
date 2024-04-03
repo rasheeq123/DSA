@@ -1,17 +1,15 @@
-//{ Driver Code Starts
-//Initial Template for C++
 
 #include<bits/stdc++.h>
 using namespace std;
 
-// A Tree node
+
 struct Node
 {
 	int data;
 	struct Node *left, *right;
 };
 
-// Utility function to create a new node
+
 Node* newNode(int data)
 {
 	Node* temp = new Node;
@@ -26,8 +24,7 @@ Node* buildTree(string str)
 	if (str.length() == 0 || str[0] == 'N')
 		return NULL;
 
-	// Creating vector of strings from input
-	// string after spliting by space
+	
 	vector<string> ip;
 
 	istringstream iss(str);
@@ -49,16 +46,16 @@ Node* buildTree(string str)
 		Node* currNode = queue.front();
 		queue.pop();
 
-		// Get the current node's value from the string
+		
 		string currVal = ip[i];
 
-		// If the left child is not null
+	
 		if (currVal != "N") {
 
-			// Create the left child for the current node
+			
 			currNode->left = newNode(stoi(currVal));
 
-			// Push it to the queue
+		
 			queue.push(currNode->left);
 		}
 
