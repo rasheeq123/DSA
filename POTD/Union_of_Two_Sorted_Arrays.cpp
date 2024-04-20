@@ -1,9 +1,9 @@
-//{ Driver Code Starts
+
 #include <bits/stdc++.h>
 using namespace std;
 
 
-// } Driver Code Ends
+
 class Solution{
     public:
     //arr1,arr2 : the arrays
@@ -11,8 +11,7 @@ class Solution{
     //Function to return a list containing the union of the two arrays. 
     vector<int> findUnion(int arr1[], int arr2[], int n, int m)
     {
-        //Your code here
-        //return vector with correct order of elements
+        
          vector<int> ans;
         int i=0, j=0;
         while(i<n && j<m){
@@ -44,7 +43,7 @@ class Solution{
     }
 };
 
-//{ Driver Code Starts.
+
 
 int main() {
 	
@@ -77,4 +76,3 @@ int main() {
 	
 	return 0;
 }
-// } Driver Code Ends
