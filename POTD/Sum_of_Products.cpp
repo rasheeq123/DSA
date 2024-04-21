@@ -20,7 +20,7 @@ class Solution {
             while(temp)
             {
                 if(temp&1)
-                    mp[j]++;
+                mp[j]++;
                 j++;
                 temp = temp/2;
             }
