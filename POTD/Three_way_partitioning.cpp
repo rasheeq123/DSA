@@ -10,7 +10,7 @@ public:
     
     void threeWayPartition(vector<int>& array,int a, int b)
     {
-        // code here 
+        
           int n = array.size();
         int left = 0,mid = 0,right= n-1;
         
@@ -37,7 +37,7 @@ public:
     }
 };
 
-//{ Driver Code Starts.
+
 
 int main() {
     int t;
@@ -115,4 +115,3 @@ int main() {
     return 0;
 }
 
-// } Driver Code Ends
