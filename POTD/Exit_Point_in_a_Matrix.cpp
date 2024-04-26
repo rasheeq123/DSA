@@ -1,13 +1,12 @@
-//{ Driver Code Starts
+
 #include <bits/stdc++.h>
 using namespace std;
 
 
-// } Driver Code Ends
 class Solution {
   public:
     vector<int> FindExitPoint(int n, int m, vector<vector<int>>& matrix) {
-        // Code here
+       
          vector<vector<int>>directions={{0,1},{1,0},{0,-1},{-1,0}}; //4 directions
        int i=0,j=0,direction_ptr=0;
        vector<int>res;
@@ -24,7 +23,7 @@ class Solution {
     }
 };
 
-//{ Driver Code Starts.
+
 int main() {
     int tc;
     cin >> tc;
