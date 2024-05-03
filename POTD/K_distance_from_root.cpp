@@ -1,4 +1,4 @@
-//{ Driver Code Starts
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,7 +8,7 @@ struct Node
     struct Node *left;
     struct Node *right;
 };
-// Utility function to create a new Tree Node
+// Utility function 
 Node* newNode(int val)
 {
     Node* temp = new Node;
@@ -18,10 +18,10 @@ Node* newNode(int val)
     
     return temp;
 }
-// Function to Build Tree
+
 Node* buildTree(string str)
 {   
-    // Corner Case
+    
     if(str.length() == 0 || str[0] == 'N')
             return NULL;
     
@@ -83,20 +83,11 @@ Node* buildTree(string str)
 }
 
 
-// } Driver Code Ends
-/* A binary tree node has data, pointer to left child
-   and a pointer to right child /
-struct Node
-{
-    int data;
-    Node* left;
-    Node* right;
-}; */
 
 class Solution
 {
     public:
-    // function should print the nodes at k distance from root
+    
     vector<int> Kdistance(struct Node *root, int k)
     {
       // Your code here
@@ -144,7 +135,7 @@ class Solution
 };
 
 
-//{ Driver Code Starts.
+
 
 int main()
 {
@@ -167,4 +158,3 @@ int main()
     }
     return 1;
 }
-// } Driver Code Ends
