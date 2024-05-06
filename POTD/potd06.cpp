@@ -101,18 +101,6 @@ int main()
   return 0;
 }
 
-// } Driver Code Ends
-
-
-//User function Template for C++
-
-/* Tree node structure  used in the program
- struct Node
- {
-     int data;
-     Node* left, *right;
-}; */
-
 vector<int> noSibling(Node* node)
 {
     // code here
