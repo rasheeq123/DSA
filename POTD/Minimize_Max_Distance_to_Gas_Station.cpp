@@ -32,7 +32,7 @@ class Solution {
                 l = mid;
             }
         }
-        return ans;
+        return 0.0;
     }
 };
 
