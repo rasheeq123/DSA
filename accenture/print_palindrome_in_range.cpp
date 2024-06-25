@@ -12,13 +12,13 @@ void print_palindrome(int n, int m)
         rem=rem*10+temp%10;
         temp=temp/10;
         }
-        if(num==rem)
-    {
-        cout<<num<<" ";
 
+    if(num==rem)
+    {
+    cout<<num<<" ";
     }
-    
-    
+    }
+   
 }
 int main()
 {
