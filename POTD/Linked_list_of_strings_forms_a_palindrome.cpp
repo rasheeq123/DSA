@@ -1,5 +1,4 @@
-//{ Driver Code Starts
-// Code by Shubham Joshi
+
 #include <bits/stdc++.h>
 using namespace std;
 
