@@ -19,8 +19,7 @@ Node* buildTree(string str) {
     if (str.length() == 0 || str[0] == 'N')
         return NULL;
 
-    // Creating veactor of strings from input
-    // string after spliting by space
+
     vector<string> ip;
 
     istringstream iss(str);
@@ -113,9 +112,9 @@ class Solution {
     
     vector<Node*> printAllDups(Node* root) 
     {
-        vector<Node*> ans;                  // Creating our answer vector
-        unordered_map<string, int> count;   // creating a map to store all subtree as strings
-        generate(root, count, ans);          // call to the fucntion to store all the subtree in map.
+        vector<Node*> ans;                  
+        unordered_map<string, int> count;   
+        generate(root, count, ans);          
         return ans;
     }
 };
