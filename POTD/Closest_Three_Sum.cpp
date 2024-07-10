@@ -1,14 +1,6 @@
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
-
-
-// } Driver Code Ends
-// User function template for C++
-
-// arr : given vector of elements
-// target : given sum value
-
 class Solution {
   public:
     int threeSumClosest(vector<int> arr, int target) {
