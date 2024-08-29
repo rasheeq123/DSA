@@ -48,7 +48,7 @@ class Solution {
   public:
     // Function to find the length of a loop in the linked list.
     int countNodesinLoop(Node *head) {
-        // Code here
+        
          Node* slow=head;
         Node* fast=head;
         bool loop=false;
